@@ -3,7 +3,7 @@ source variables.sh
 
 #Si pone algun argumento se toma este como la dirección ip 
 echo $1
-if [[ $1 != "d" ]]
+if [[ $1 != "" ]]
 then
 set ip=$1
 fi
