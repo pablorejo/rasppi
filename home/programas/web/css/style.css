@@ -1,0 +1,237 @@
+/* Definiendo colores para el proyecto */
+:root{
+    --principal: #114358;
+    --complementarioUno: #f2aa1f;
+    --complementarioDos: #f1ece7;
+    --oscuro: #090909;
+    --claro: #ffffff;
+}
+
+/* ### Se cambian en todos a no ser que se especifique lo contrario ### */
+header{
+    color: var(--oscuro);
+    text-align: center;
+
+}
+body{
+    background-color: var(--complementarioDos);
+    text-align: center;
+}
+h1{
+    color: var(--principal);
+    font-size: 100px;
+}
+h2{
+    color: var(--principal);
+    font-size: 70px;
+}
+h3{
+    color: var(--complementarioUno);
+    font-size: 45px;
+}
+li{
+    /* Para quitar todos los marker en los li */
+    list-style-type: none;
+}
+a{
+    /* Quitar subrayado */
+    text-decoration: none;
+}
+p{
+    font-size: 30px;
+}
+
+
+/* ########### Clases e id ##############*/
+
+/* Barra de navegacion */
+.navegacion{
+    background-color: var(--complementarioUno);
+    display: flex;
+    padding: 1rem;
+}
+.navegacion li {
+    margin: auto;
+}
+.navegacion li:hover{
+    color: var(--principal);
+    
+}
+.navegacion a{
+    font-size: 30px;
+    font-weight: 1000;
+    color: var(--oscuro); 
+    
+}
+
+
+
+
+/* Titulo */
+.titulo{
+    display: flex;
+    align-items: center;
+    color: var(--principal);
+    /* border: 1rem solid var(--complementarioDos  ); */
+    border-bottom: 2rem solid var(--complementarioUno);
+    /* margin: 2rem; */
+    /* background-image: url("../img/principal.png"); */
+    /* background-color: var(--complementarioDos); */
+}
+
+/* Imagen mia */
+.titulo img{
+    max-height: 70rem;
+    max-width: 800rem;
+}
+/* .objetfit > .titulo img{
+	width: 200px;
+	height: 200px;
+	object-fit: none;
+	background-color: black;
+	border: 3px solid #ff9daa;
+} */
+/* Sobre mi */
+.sobremi{
+    display: flow-root;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+}
+.sobremi p{
+    font-size: 30px;
+    color: var(--oscuro);
+    margin: 30px;
+    text-align: center;
+}
+
+
+
+/* Educación */
+.educacion{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* display: flex; */
+}
+/* .educacion div{
+    
+
+    grid-template-columns: ;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, 2);
+} */
+.uvigo{
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    /* align-items: center;
+    text-align: center;
+    align-content: center; */
+}
+
+.uvigo div{
+    max-width: 50rem;
+    margin-right: 3rem;
+    font-size: 30px;
+}
+
+
+/* Habilidades */
+
+.habilidades{
+    margin: 1rem;
+    font-size: 20px;
+}
+.habilidades li{
+    margin: 1rem;
+}
+.habilidades div{
+    margin-bottom: 4rem;
+} 
+
+
+
+.listar{
+    display: flow-root;
+    align-items: center;
+    font-size: 20px;
+}
+.listar div{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    margin: 3rem;
+    
+    /* grid-template-columns: ; */
+}
+.listar div li{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* margin: 1rem; */
+}
+.listar img{
+    max-height: 5rem;
+    margin-left: 3rem;
+}
+
+.listar2 div{ 
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 30px;
+} 
+.listar2 img{
+    max-height: 20rem;
+}
+
+.intereses{
+    margin-top: 10rem;
+    font-size: 30px;
+    
+}
+
+
+/* Idiomas */
+
+.idiomas{
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.idiomas span{
+    font-size: 20px;
+    color: var(--oscuro);
+}
+
+
+/* ########################   cv.html  ###################### */
+.descargar{
+    font-size: 30px; 
+}
+
+
+/* ########################   contactar.html  ###################### */
+
+.contactar{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contactar-form{
+    max-width: 50%;
+}
+
+
+.contactar-form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comentario {
+    max-width: 100%;
+}
+
+.colocar  {
+    display: flex;
+}
