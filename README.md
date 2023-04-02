@@ -1,3 +1,4 @@
+- [Configurar](#configurar)
 - [rasppi](#rasppi)
 - [home](#home)
   - [docker](#docker)
@@ -11,7 +12,29 @@
   - [ssh.sh](#sshsh)
     - [Opciones de ejecución](#opciones-de-ejecución-1)
   - [variables.sh](#variablessh)
+# Configurar 
+1. Para configurar los script primero que nada configurar el script de [variables.sh](#variablessh)
+2. Dar permisos de ejecución a los scripts
+```bash
+    sudo chmod +x *
+```
 
+3. A continuación crearemos los alias
+```bash
+alias sshpi="cd ~/Documentos/Documentos_pablo/rasppi/scripts/ && ./ssh.sh"
+alias sftppi="cd ~/Documentos/Documentos_pablo/rasppi/scripts/ && ./sftp.sh"
+```
+
+4. Configurar el puerto del ssh para que estea donde quieras
+Cambias el puerto en este fichero
+```bash
+nano /etc/ssh/sshd_config
+```
+
+Reinicias el servicion ssh.
+```bash
+service ssh restart
+```
 
 # rasppi
 Vamos a crear un fichero de configuracion para nuestra raspberry pi
@@ -19,7 +42,8 @@ Vamos a crear un fichero de configuracion para nuestra raspberry pi
 En este proyecto tenemos dos carpetas importantes:
 - [home](#home): Donde estaran los ficheros que se guarden en la raspberrypi
 - [sripts](#scripts): Donde se guardara los scripts para configurar y acceder a la raspberrypi
-  
+
+
 
 # home
 En este directorio tendremos 2 carpetas [docker](#docker) y [programas](#programas).
