@@ -47,19 +47,19 @@ p{
 /* Barra de navegacion */
 .navegacion{
     background-color: var(--complementarioUno);
-    display: flex;
-    padding: 1rem;
+    /* display: flex;
+    padding: 1rem; */
 }
-.navegacion li {
+/* .navegacion li {
     margin: auto;
-}
+} */
 .navegacion li:hover{
     color: var(--principal);
     
 }
 .navegacion a{
-    font-size: 30px;
-    font-weight: 1000;
+    /* font-size: 30px;
+    font-weight: 1000; */
     color: var(--oscuro); 
     
 }
