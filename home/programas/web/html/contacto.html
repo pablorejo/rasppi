@@ -17,6 +17,9 @@
     <title>CV</title>
     <link rel="shortcut icon" href="../img/icono.png">
 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 
 </head>
 <body>
@@ -30,30 +33,29 @@
     </header>
     <section class="contactar">
         <h1>Contacto</h1>
-        <form action="" class="contactar-form">
-            <div>
-                <label>Nombre Compañia</label>
-                <input type="text" name="cname" placeholder="Nombre" pattern="^[0-9,a-zñ]{3,} [0-9,a-zñ]{3,}$">
+        <form action="https://formsubmit.co/pablopiorejo@gmail.com" method="POST" class="contactar-form col s12 ">
+            <div class="row">
+                <label class="col s6">Nombre</label>
+                <input type="text" class="col s6" name="name" placeholder="Nombre">
             </div>
-            <div>
-                <label>Nombre</label>
-                <input type="text" name="clogin" placeholder="usuario">
+            <div class="row">
+                <label class="col s6" >Email</label>
+                <input class="col s6" type="email" name="email" placeholder="Email">
             </div>
-            <div>
-                <label>Email</label>
-                <input type="email" name="cemail" placeholder="Email">
+            <div class="row">
+                <label class="col s6">Titulo</label>
+                <input class="col s6" type="text" name="subject" placeholder="Escriba su titulo de la consulta">
             </div>
-            <div>
+            <!-- <div>
                 <label>Fichero</label>
-                <!-- Para poder elegir solo imagenes se pasa por parametro acept las extensiones validas -->
-                <input type="file" name="cfile" accept=".giz,.jpg,.png,.jpeg" placeholder="Si quiere mandar algun tipo de fichero" > 
+                <input type="file" name="file" accept=".giz,.jpg,.png,.jpeg" placeholder="Si quiere mandar algun tipo de fichero" > 
+            </div> -->
+            <div class="comentario colocar row">
+                <Label class="col s6" >Comentario adiccional</Label>
+                <textarea  class="col s6" name="comments" cols="80" rows="4"></textarea>
             </div>
-            <div class="comentario colocar">
-                <Label>Comentario adiccional</Label>
-                <textarea name="ccomment" cols="80" rows="4"></textarea>
-            </div>
-            <div>
-                <input class="formulario__boton" type="submit" name="enviar" value="Enviar" >
+            <div class="row">
+                <input class="btn col s2" type="submit" value="Enviar">
             </div>
         </form>
 
