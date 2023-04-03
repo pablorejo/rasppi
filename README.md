@@ -22,9 +22,10 @@
 3. A continuación crearemos los alias
 ```bash
 alias sshpi="cd ~/Documentos/Documentos_pablo/rasppi/scripts/ && ./ssh.sh"
+```
+```bash
 alias sftppi="cd ~/Documentos/Documentos_pablo/rasppi/scripts/ && ./sftp.sh"
 ```
-
 4. Configurar el puerto del ssh para que estea donde quieras
 Cambias el puerto en este fichero
 ```bash

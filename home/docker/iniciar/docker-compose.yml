@@ -1,4 +1,3 @@
-version: "3"
 services:
 
   #para abrir el servicio del gestor de contenedores "portainer"
@@ -11,6 +10,7 @@ services:
       - data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     restart: always
+
 
   #para abrir el servicio de mi pagina web  
   web:
